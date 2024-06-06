@@ -35,7 +35,7 @@
   ![image](https://github.com/kshitijrajsharma/overture-data-analysis-report/assets/36752999/363fbb4f-8a46-4e86-b28e-0a0bad12dbc3)
 
 
-## Studey Areas for Testing
+## Study Areas 
 
 - Argentina
 - Indonesia & Malaysia Area
@@ -45,7 +45,7 @@
 - Nepal
 - Nigeria
 
-- Some random bounding boxes were drone to somehow match the country boundary in above listed countries ( this is not true for all of them - actual boundary may differ ) . Data on those bbox were downloaded, viewed, analyzed, and compared regarding its distribution and how it fits with the existing population.
+Note : Covering bounding boxes were drawn to somehow match the country boundary in above listed countries ( this is not true for all of them - actual boundary may differ ) . Data on those bbox were downloaded, viewed, analyzed, and compared regarding its distribution and how it fits with the existing population.
 
 ![image](https://github.com/kshitijrajsharma/overture-data-analysis-report/assets/36752999/7e038bdd-082d-4c8d-a310-5ff1bc350f8d)
 
