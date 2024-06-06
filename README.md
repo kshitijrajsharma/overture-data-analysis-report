@@ -58,7 +58,7 @@ View Geojson [Here](data/study-area.geojson)
 
 ![image](https://github.com/kshitijrajsharma/overture-data-analysis-report/assets/36752999/adcb947e-4cf4-45ea-bf5e-2199c4332c4b)
 - When a release is published, there are no major enhancements, and orphan roads remain in the datasets.
-- Tags are not fixed or validated.
+- Tags are not fixed or validated (For eg : On Nepal most of the roads were classified as unclassified - same as OSM , some major road has inconsistency in trunk and primary ) , Looks like tags validation is still under going or something not being looked into 
 
 ### Buildings
 - Buildings seem to have undergone good conflation.
