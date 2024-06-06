@@ -49,7 +49,7 @@
 
 ![image](https://github.com/kshitijrajsharma/overture-data-analysis-report/assets/36752999/7e038bdd-082d-4c8d-a310-5ff1bc350f8d)
 
-View Geojson (Here)[data/study-area.geojson] 
+View Geojson [Here](data/study-area.geojson)
 
 ## Qualitative Analysis
 
