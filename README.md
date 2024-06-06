@@ -53,7 +53,7 @@ View Geojson [Here](data/study-area.geojson)
 ### Roads
 - Roads are not cleaned and validated.
 
-![image](https://github.com/kshitijrajsharma/overture-data-analysis-report/assets/36752999/adcb947e-4cf4-45ea-bf5e-2199c4332c4b)
+  ![image](https://github.com/kshitijrajsharma/overture-data-analysis-report/assets/36752999/adcb947e-4cf4-45ea-bf5e-2199c4332c4b)
 - When a release is published, there are no major enhancements, and orphan roads remain in the datasets.
 - Tags are not fixed or validated (For eg: In Nepal, most of the roads were classified as unclassified - same as OSM. Some major roads have inconsistency in trunk and primary). It appears that tags validation is still ongoing or something is not being looked into.
 
@@ -77,7 +77,7 @@ View Geojson [Here](data/study-area.geojson)
 
 - POI datasets appear to be detailed and populated in most places, making them easily importable into OSM.
 
-![image](https://github.com/kshitijrajsharma/overture-data-analysis-report/assets/36752999/dc9e7168-d2cf-4601-adc8-e6d34ff6f135)
+  ![image](https://github.com/kshitijrajsharma/overture-data-analysis-report/assets/36752999/dc9e7168-d2cf-4601-adc8-e6d34ff6f135)
 
 ## Quick summary 
 - Overture datasets stand out well for building footprints and POIs, relatively speaking. Transportation, Land, and Land Use seem somewhat similar to OpenStreetMap.
@@ -106,7 +106,7 @@ PS: Analysis was not done on exact country boundary, its bbox taken in the area 
 
 ## Conclusion
 
-From the qualitative analysis conducted on different parts of the world, the data is impressive in terms of offset management when different sources are grouped. Buildings seem to be well-matched with each other on an obsolete level, and when ground truth checking with Esri imagery, it covers most places. However, when combined with the tabular analysis in most of the places people-per-building ratio are not that realistic yet they are not worst too (seems it doesn't left out and covers most , I am affraid it might have some clutter buildings). For example, in Argentina, it's 1.68 which seems pretty low. It appears that OpenStreetmap buildings are preserved and are as told (given highest priority - if you look into current approx osm buildings and numbers included in overture they are quite similar). A massive number of AI building footprints are added to the datasets, whereas google buildings are almost more than 50% in all of the area (Except Indonesia). For roads, validation is still poor, especially in areas like Nepal and Indonesia, where many orphan roads exist in the datasets. The POI datasets seem well-detailed, and there is great potential for them to be added to OSM after validation, as Rapid already has this functionality. 3D height data is not impressive in the developing countries yet I was surprised to see some of them in countries like Nepal. 
+From the qualitative analysis conducted on different parts of the world, the data is impressive in terms of offset management when different sources are grouped. Buildings seem to be well-matched with each other on an obsolete level, and when ground truth checking with Esri imagery, it covers most places. However, when combined with the tabular analysis in most of the places people-per-building ratio are not that realistic yet they are not worst too (seems it doesn't left out and covers most , I am affraid it might have some clutter buildings). For example, in Argentina, it's 1.68 which seems pretty low. It appears that OpenStreetmap buildings are preserved and are as told (given highest priority - if you look into current approx osm buildings and numbers included in overture they are quite similar). A massive number of AI building footprints are added to the datasets, whereas google buildings are almost more than 50% in all of the area (Except Indonesia). For roads, validation is still poor, especially in areas like Nepal and Indonesia, where many orphan roads exist in the datasets. The POI datasets seem well-detailed, and there is great potential for them to be added to OSM after validation, as Rapid already has this functionality. 3D height data is not impressive in the developing countries yet I was surprised to see some of them in countries like Nepal. Building footprints seems to be well defined and aligned with transportation layers exploring the potential that it can be quickly checked validated and used in case of pre disaster response and many other usercases.
 
 This is my only personal view with quick analysis on the area I looked into. It is suggested to form your own opinion using the developed tools and data shared as shown in the video by the end of this blog.
 
