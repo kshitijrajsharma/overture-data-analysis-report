@@ -1,10 +1,8 @@
-# overture-data-analysis-report
-
+# Overture Data Analysis Report
 
 ## Release Used
 
--  Overture release: 2024-05-16-beta.0
-
+- **Overture release**: 2024-05-16-beta.0
 
 ## Objectives
 
@@ -12,18 +10,18 @@
 - To perform qualitative and quantitative analysis of Overture map data.
 
 ### Secondary Objectives
-- Find a way to visualize the releases on a country level.
-- Find a way to conduct qualitative analysis, identifying additions to existing OSM data and how it differs across countries.
-- Make it easy for general users to form their own opinions based on the available data.
+- Visualize the releases on a country level.
+- Conduct qualitative analysis to identify additions to existing OSM data and differences across countries.
+- Facilitate general users in forming their own opinions based on the available data.
 
 ## Approach
 
-1. Building a script to retrieve Overture data as geoparquet with multiple themes (streamlining and automating the process).
-2. Converting geoparquet to geojson.
-3. Converting flattened geojson to pmtiles.
-4. Developing a viewer for comparison and loading.
-5. Automating the entire process with a bash script.
-6. Comparing with population data, existing OSM buildings in the area, and, if possible, the number of people per building.
+1. Build a script to retrieve Overture data as geoparquet with multiple themes (streamlining and automating the process).
+2. Convert geoparquet to geojson.
+3. Convert flattened geojson to pmtiles.
+4. Develop a viewer for comparison and loading.
+5. Automate the entire process with a bash script.
+6. Compare with population data, existing OSM buildings in the area, and if possible, the number of people per building.
 
 ## Considerations
 
@@ -33,7 +31,6 @@
 - The primary statement being validated is: "Overture Maps data will undergo validation checks to detect map errors, breakage, and vandalism to help ensure that map data can be used in production systems."
 
   ![image](https://github.com/kshitijrajsharma/overture-data-analysis-report/assets/36752999/363fbb4f-8a46-4e86-b28e-0a0bad12dbc3)
-
 
 ## Study Areas 
 
@@ -45,7 +42,7 @@
 - Nepal
 - Nigeria
 
-Note : Covering bounding boxes were drawn to somehow match the country boundary in above listed countries ( this is not true for all of them - actual boundary may differ ) . Data on those bbox were downloaded, viewed, analyzed, and compared regarding its distribution and how it fits with the existing population.
+Note: Covering bounding boxes were drawn to somehow match the country boundary in above listed countries ( this is not true for all of them - actual boundary may differ ). Data on those bbox were downloaded, viewed, analyzed, and compared regarding its distribution and how it fits with the existing population.
 
 ![image](https://github.com/kshitijrajsharma/overture-data-analysis-report/assets/36752999/7e038bdd-082d-4c8d-a310-5ff1bc350f8d)
 
@@ -58,7 +55,7 @@ View Geojson [Here](data/study-area.geojson)
 
 ![image](https://github.com/kshitijrajsharma/overture-data-analysis-report/assets/36752999/adcb947e-4cf4-45ea-bf5e-2199c4332c4b)
 - When a release is published, there are no major enhancements, and orphan roads remain in the datasets.
-- Tags are not fixed or validated (For eg : On Nepal most of the roads were classified as unclassified - same as OSM , some major road has inconsistency in trunk and primary ) , Looks like tags validation is still under going or something not being looked into 
+- Tags are not fixed or validated (For eg: In Nepal, most of the roads were classified as unclassified - same as OSM. Some major roads have inconsistency in trunk and primary). It appears that tags validation is still ongoing or something is not being looked into.
 
 ### Buildings
 - Buildings seem to have undergone good conflation.
@@ -70,14 +67,16 @@ View Geojson [Here](data/study-area.geojson)
   ![image](https://github.com/kshitijrajsharma/overture-data-analysis-report/assets/36752999/c18fa3b2-cad6-4d21-9f8e-eba76ff9dcbf)
 
 ### Validation Issues
-- Pular pisau, Borneo (Near Malaysia):
+- Pular Pisau, Borneo (Near Malaysia):
 
   ![image](https://github.com/kshitijrajsharma/overture-data-analysis-report/assets/36752999/665d06de-567d-4b80-b869-42116a77d4ca)
 
- - Height feature is present in only some buildings. In countries like Nepal, it is minimal
+ - Height feature is present in only some buildings. In countries like Nepal, it is minimal.
+
    ![image](https://github.com/kshitijrajsharma/overture-data-analysis-report/assets/36752999/7a685baa-2a0f-4d5e-babf-e775f1b8bbc0)
 
 - POI datasets appear to be detailed and populated in most places, making them easily importable into OSM.
+
 ![image](https://github.com/kshitijrajsharma/overture-data-analysis-report/assets/36752999/dc9e7168-d2cf-4601-adc8-e6d34ff6f135)
 
 ## Quick summary 
@@ -105,12 +104,11 @@ Approx current OSM buildings = Fetched from the OSM at current date to validate 
 
 PS: Analysis was not done on exact country boundary, its bbox taken in the area as provided in the geojson and shared the same geometry using different parameters
 
-
 ## Conclusion
 
-From the qualitative analysis conducted on different parts of the world, the data is impressive in terms of offset management when different sources are grouped. Buildings seem to be well-matched with each other on an obsolete level, and when ground truth checking with Esri imagery, it covers most places. However, when combined with the tabular analysis in most of the places people-per-building ratio are not that realistic but they are not worst too. For eg : On argentina its 1.68 which seems pretty low. It appears that Openstreetmap buildings are preserved and are as told ( given highest priority - if you look in to current approx osm buildings and numbers included in overture they are quite similar ) . Massive number of AI building footprints are added to the datasets  , where as google buildings are almost more than 50 % in all of the area ( Except indonesia) . For roads, validation is still poor, especially in areas like Nepal and Indonesia, where many orphan roads exist in the datasets. The POI datasets seem well-detailed, and there is great potential for them to be added to OSM after validation, as Rapid already has this functionality. 3D height data is not impressive in the developing countries yet I was surprised to see some of them in countries like Nepal. 
+From the qualitative analysis conducted on different parts of the world, the data is impressive in terms of offset management when different sources are grouped. Buildings seem to be well-matched with each other on an obsolete level, and when ground truth checking with Esri imagery, it covers most places. However, when combined with the tabular analysis in most of the places people-per-building ratio are not that realistic yet they are not worst too (seems it doesn't left out and covers most , I am affraid it might have some clutter buildings). For example, in Argentina, it's 1.68 which seems pretty low. It appears that OpenStreetmap buildings are preserved and are as told (given highest priority - if you look into current approx osm buildings and numbers included in overture they are quite similar). A massive number of AI building footprints are added to the datasets, whereas google buildings are almost more than 50% in all of the area (Except Indonesia). For roads, validation is still poor, especially in areas like Nepal and Indonesia, where many orphan roads exist in the datasets. The POI datasets seem well-detailed, and there is great potential for them to be added to OSM after validation, as Rapid already has this functionality. 3D height data is not impressive in the developing countries yet I was surprised to see some of them in countries like Nepal. 
 
-This is my only personal view with quick analysis on the area I looked into . It is suggested to form your own opinion using the developed tools and data shared as shown in the video by end of this blog.
+This is my only personal view with quick analysis on the area I looked into. It is suggested to form your own opinion using the developed tools and data shared as shown in the video by the end of this blog.
 
 ## Tools and Resources Developed
 
@@ -120,18 +118,16 @@ https://queryparquet.streamlit.app/
 
 ### Viewer
 
-Viewer can directly be accessed from Querier or also available here : https://kshitijrajsharma.github.io/overture-to-tiles/ 
-
+The viewer can directly be accessed from Querier or also available here: https://kshitijrajsharma.github.io/overture-to-tiles/ 
 
 ### Extractor 
 
 https://github.com/kshitijrajsharma/overture-to-tiles/ 
 
-
 ### Quick demo how you can visualize and analyze the data 
-
 
 https://github.com/kshitijrajsharma/overture-data-analysis-report/assets/36752999/31eb9917-3fff-42db-9f5d-d2c53649bb81
 
 ### Resources and Credits : 
 - Pmtiles , Overture-py , Tippecanoe , Overture-docs , Rapid 
+
