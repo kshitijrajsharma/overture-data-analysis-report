@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "Study-area",
+"features": [
+{ "type": "Feature", "id": 0, "properties": { "name": "Argentina" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.42, -55.22487 ], [ -73.42, -21.8306167 ], [ -53.63, -21.8306167 ], [ -53.63, -55.22487 ], [ -73.42, -55.22487 ] ] ] } },
+{ "type": "Feature", "properties": { "name": "Indonesia" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 107.38657, -4.548559 ], [ 107.38657, 7.3722222 ], [ 119.5970821, 7.3722222 ], [ 119.5970821, -4.548559 ], [ 107.38657, -4.548559 ] ] ] } },
+{ "type": "Feature", "properties": { "name": "Kenya" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 33.8906765, -4.6681362 ], [ 33.8906765, 5.5033 ], [ 41.8597979, 5.5033 ], [ 41.8597979, -4.6681362 ], [ 33.8906765, -4.6681362 ] ] ] } },
+{ "type": "Feature", "properties": { "name": "Liberia" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -11.4239, 4.3663889 ], [ -11.4239, 8.5339 ], [ -7.54262, 8.5339 ], [ -7.54262, 4.3663889 ], [ -11.4239, 4.3663889 ] ] ] } },
+{ "type": "Feature", "properties": { "name": "Malawi" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 32.7, -16.7667 ], [ 32.7, -9.2333333 ], [ 35.77, -9.2333333 ], [ 35.77, -16.7667 ], [ 32.7, -16.7667 ] ] ] } },
+{ "type": "Feature", "properties": { "name": "Nepal" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 79.9927778, 26.3721854 ], [ 79.9927778, 30.4708018 ], [ 88.22, 30.4708018 ], [ 88.22, 26.3721854 ], [ 79.9927778, 26.3721854 ] ] ] } },
+{ "type": "Feature", "properties": { "name": "Nigeria" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 2.69255, 4.24 ], [ 2.69255, 13.866652 ], [ 14.5758333, 13.866652 ], [ 14.5758333, 4.24 ], [ 2.69255, 4.24 ] ] ] } }
+]
+}
