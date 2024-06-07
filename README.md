@@ -118,7 +118,7 @@ https://queryparquet.streamlit.app/
 ### Viewer
 
 The viewer can directly be accessed from Querier or also available here: https://kshitijrajsharma.github.io/overture-to-tiles/ 
-Viewer supports remote pmtiles and custom styling , Example viewer with default styling : 
+Viewer supports remote pmtiles and custom styling , Example viewer with default styling : https://kshitijrajsharma.github.io/overture-to-tiles/?url=https%3A%2F%2Fstaging-raw-data-api.s3.amazonaws.com%2Fdefault%2Foverture%2F2024-05-16-beta.0%2Fargentina%2Fpmtiles 
 
 ### Extractor 
 
