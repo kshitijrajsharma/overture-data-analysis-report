@@ -118,9 +118,11 @@ https://queryparquet.streamlit.app/
 ### Viewer
 
 The viewer can directly be accessed from Querier or also available here: https://kshitijrajsharma.github.io/overture-to-tiles/ 
+Viewer supports remote pmtiles and custom styling , Example viewer with default styling : 
 
 ### Extractor 
 
+https://github.com/kshitijrajsharma/overture-to-tiles/blob/master/scripts/Readme.md
 https://github.com/kshitijrajsharma/overture-to-tiles/ 
 
 ### Quick demo how you can visualize and analyze the data 
