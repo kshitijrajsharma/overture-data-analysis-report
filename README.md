@@ -101,8 +101,7 @@ Overture release: 2024-05-16-beta.0
 PS: Population and Current OSM Buildings Estimate is from Kontour API  
 People per building =  Population Estimate on the Area  / Total Overture Buildings 
 Approx current OSM buildings = Fetched from the OSM at current date to validate the overture osm building numbers may not match as overture kept snapshot of osm and by the time of this analysis buildings might increase or decrease in osm, should give rough idea  
-
-PS: Analysis was not done on exact country boundary, its bbox taken in the area as provided in the geojson and shared the same geometry using different parameters
+Analysis was not done on exact country boundary, its bbox taken in the area as provided in the geojson and shared the same geometry using different parameters
 
 ## Conclusion
 
